@@ -1,0 +1,36 @@
+{
+  "name": "TrueMeme",
+  "displayName": "Python Bool Icons",
+  "description": "Shows the Morgan Freeman meme next to True/False when a boolean variable is defined in Python.",
+  "version": "0.0.1",
+  "publisher": "choom1984",
+  "repository": { "type": "git", "url": "https://github.com/choom1984/TrueMeme" },
+  "license": "MIT",
+  "icon": "images_old/true.png",
+  "engines": { "vscode": "^1.80.0" },
+  "categories": ["Other"],
+  "activationEvents": ["onLanguage:python"],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Python Bool Icons",
+      "properties": {
+        "pythonBoolIcons.trueIcon": {
+          "type": "string",
+          "default": "",
+          "description": "Absolute path to the image shown next to True."
+        },
+        "pythonBoolIcons.falseIcon": {
+          "type": "string",
+          "default": "",
+          "description": "Absolute path to the image shown next to False."
+        },
+        "pythonBoolIcons.iconSize": {
+          "type": "string",
+          "default": "1em",
+          "description": "CSS size of the icon (e.g. 1em, 14px), to be fixed lol."
+        }
+      }
+    }
+  }
+}
